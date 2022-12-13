@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "consultas-dev": {
+      "hosting": {
+        "github_api": [
+          "consultas-dev"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "consultas-dev"
+  }
+}

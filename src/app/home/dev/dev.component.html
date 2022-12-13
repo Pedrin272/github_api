@@ -14,7 +14,10 @@
   <div class="card-content block">
     <p class="">Seguidores: {{ dev.followers }}</p>
     <p class="">Quantidade Repositorios {{ dev.public_repos }}</p>
-    <a [href]="dev.blog"> Contato: {{ dev.blog }}</a>
+    <p>
+      Contato: <a [href]="dev.blog"> {{ dev.blog }}</a>
+    </p>
+
     <p class="">Empregado em: {{ dev.company }}</p>
   </div>
   <div class="card-footer">

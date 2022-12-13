@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-top">
+        <img class="image is-rounded" [src]="dev.avatar_url" alt="Avatar" />
+      </div>
+      <div class="media-content">
+        <h1 class="title px-2">{{ dev.name }}</h1>
+        <p class="subtitle px-2">{{ dev.bio }}</p>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="card-content block">
+    <p class="">Seguidores: {{ dev.followers }}</p>
+    <p class="">Quantidade Repositorios {{ dev.public_repos }}</p>
+    <a [href]="dev.blog"> Contato: {{ dev.blog }}</a>
+    <p class="">Empregado em: {{ dev.company }}</p>
+  </div>
+  <div class="card-footer">
+    <p class="card-footer-item">Ultima Atualização em: {{ dev.updated_at }}</p>
+    <a class="card-footer-item" [href]="dev.html_url" target="_blank">Github</a>
+  </div>
+</div>

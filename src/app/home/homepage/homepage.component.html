@@ -1,0 +1,20 @@
+<section class="section has-background-grey-darker">
+  <div class="container is-max-widescreen is-fullheight">
+    <h1 class="title has-text-white-bis">Sobre o Dev</h1>
+    <p class="subtitle has-text-white-ter">Insira o nome de usuario github do dev!</p>
+
+    <form action="submit" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="columns is-3 is-multiline is-mobile">
+        <div class="column mt-4 is-5 field">
+          <label class="label has-text-white-ter">Github User</label>
+          <input class="input" type="text" name="name" formControlName="name" />
+        </div>
+        <div class="column">
+          <button class="button mt-6" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <app-dev *ngIf="formSubmitted" [dev]="dev"></app-dev>
+  </div>
+</section>
